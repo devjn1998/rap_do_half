@@ -134,6 +134,7 @@ function configuraLembrete() {
 var button = document.getElementById('botao');
 
 button.addEventListener('click', function(e) {
+    alert('Você será lembrado no dia do evento do RAP DO HALF')
     e.preventDefault();
     configuraLembrete();
 });
