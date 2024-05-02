@@ -1,0 +1,62 @@
+@use 'variaveis';
+
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/fundo_hero_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    position: relative;
+    cursor: default;
+    text-align: center;
+
+    .container {
+        position: relative;
+    }
+
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variaveis.$textSecondaryColor;
+        opacity: 0.7;
+        content: "";
+    }
+
+    &__logo {
+        margin: 0 auto;
+        height: 240px;
+        display: block;
+        cursor: default;
+        text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9); 
+    }
+
+
+    &__entrada {
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        display: block;
+        cursor: default;
+        box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.9); 
+
+
+        @media (max-width: 640px) {
+            top: 100%;
+            left: 0%;
+            height: 80px;
+        }
+    }
+
+    &__text {
+        font-size: 3em;
+        font-weight: bolder;
+        text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9); 
+
+    }
+
+}

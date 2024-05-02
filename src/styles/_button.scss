@@ -1,0 +1,27 @@
+@use 'variaveis';
+
+.button {
+    position: absolute;
+    display: flex;
+    top: 110%;
+    left: 44%;
+    white-space: nowrap;
+
+    &--submit {
+        background-color: #e2e204;
+        color: variaveis.$textSecondaryColor;
+        padding: 12px;
+        height: 50px;
+        border-radius: 6px;
+        font-weight: bolder;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media ( max-width: 640px) {
+        right: 0%;
+        top: 110%;
+        font-size: 0.9em;
+    }
+    
+}
