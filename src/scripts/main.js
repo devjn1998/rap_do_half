@@ -89,7 +89,7 @@ function iniciarContador() {
         const minutosAteoEvento = Math.floor((distanciaAteOEvento % diaEMMs) / minutoMS);
         const segundosAteOEvento = Math.floor((distanciaAteOEvento % minutoMS) / 1000);
 
-        document.getElementById('contador').innerHTML = `${diasAteOEvento}d ${horasAteoEvento}h ${minutosAteoEvento}m ${segundosAteOEvento}m`;
+        document.getElementById('contador').innerHTML = `${diasAteOEvento}d ${horasAteoEvento}h ${minutosAteoEvento}m ${segundosAteOEvento}s`;
 
         if (distanciaAteOEvento < 0) {
             clearInterval(contaAsHoras);
