@@ -86,7 +86,7 @@ function iniciarContador() {
 
         const diasAteOEvento = Math.floor(distanciaAteOEvento / diaEMMs);
         const horasAteoEvento = Math.floor((distanciaAteOEvento % diaEMMs) / horaEmMs);
-        const minutosAteoEvento = Math.floor((distanciaAteOEvento % diaEMMs) / minutoMS);
+        const minutosAteoEvento = Math.floor((distanciaAteOEvento % horaEmMs) / minutoMS);
         const segundosAteOEvento = Math.floor((distanciaAteOEvento % minutoMS) / 1000);
 
         document.getElementById('contador').innerHTML = `${diasAteOEvento}d ${horasAteoEvento}h ${minutosAteoEvento}m ${segundosAteOEvento}s`;
